@@ -53,8 +53,8 @@ object Settings {
       val gdxName = if (nightlies)
         "libgdx-nightly-" + version
       else {
-        val versionRegix = "(libgdx-)([0-9\\.]+[0-9])".r
-        val versionNumRegix = "[0-9\\.]+[0-9]".r
+        val versionRegix = """(libgdx-)([0-9\.]+[0-9])""".r
+        val versionNumRegix = """[0-9\.]+[0-9]""".r
 
         version match {
           case versionNumRegix(num) => "libgdx-" + num
