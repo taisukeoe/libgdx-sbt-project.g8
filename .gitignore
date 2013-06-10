@@ -4,3 +4,7 @@ lib_managed/
 src_managed/
 project/plugins/project/
 .DS_Store
+
+**/target/
+.idea/
+.idea_modules/
